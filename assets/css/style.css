@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #00ffff;
+}
+
+center{
+    padding: 50px;
+}
+
+
+#main{
+
+}
+
+#header{
+    
+}
+
+.avatar{
+    /* margin-top: 80px; */
+    border-radius: 50px;
+}
+
+.name{
+    margin: 16px;
+    font-size: 40px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.maxim{
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
+    /* margin: 16px; */
+}
+
+.longlist{
+    margin: 40px 20px 0px 20px;
+    padding: 10px;
+    width: 350px;
+    border-radius: 100px;
+    text-align: center; 
+}
+
+.button{
+    margin: 20px 20px 0px 20px;
+    padding: 10px;
+    width: 150px;
+    border-radius: 100px;
+    text-align: center;
+}
+
+.contactnow{
+    margin: 40px 20px 0px 20px;
+    padding: 10px;
+    width: 150px;
+    border-radius: 35%;
+    text-align: center;
+}
+
+.cssicon{
+    padding-left: 5px;
+}
+
+
+.longlist:hover,
+.contactnow:hover,
+.button:hover{
+    background-color: black;
+    color: #ffff;
+}

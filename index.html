@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduce my self</title>
+    <link rel="stylesheet" href="./assets/js/camchuot.js">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap">
+    <script src="https://kit.fontawesome.com/3be8dea492.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <center>
+        <img class="avatar" src="./assets/img/avatar.jpg" alt="avatar" width="100">
+        <h3 class="name">Trần Trường Long</h3>
+        <p style="width: 330px;" class="maxim">Đừng đánh giá tôi qua lời nói của người khác. Cứ tiếp xúc rồi bạn sẽ thấy!</p>
+        <button class="longlist" onclick="location.href = ''"><i class="fa-solid fa-heart"></i> Relationship (Chưa có nên chưa ấn đc *-*)</button><br>
+        <button class="button" onclick="location.href = 'https://www.facebook.com/profile.php?id=100039997514822' "><i class="cssicon fa-brands fa-facebook"></i> Facebook</button>
+        <button class="button" onclick="location.href = 'https://www.instagram.com/melt2308/' "><i class="cssicon fa-brands fa-square-instagram"></i> Instagram</button><br>
+        <button class="button" onclick="location.href = 'https://www.tiktok.com/@longmelt' "><i class="fa-brands fa-tiktok"></i> Tiktok</button>
+        <button class="button" onclick="location.href = 'https://www.youtube.com/channel/UCG8j5W5LO2puIoadD_HoFww' "><i class="cssicon fa-brands fa-youtube"></i> Youtube</button><br>
+        <button class="button" onclick="location.href = 'https://zalo.me/0829047511' "><i class="fa-solid fa-user"></i> Zalo</button>
+        <button class="button" onclick="location.href = 'tel:0829047511' "><i class="cssicon fa-solid fa-phone"></i> Telephone</button><br>
+        <button class="contactnow" onclick="location.href = 'https://www.facebook.com/profile.php?id=100039997514822'">Follow</button>
+        <button class="contactnow" onclick="location.href = 'https://www.messenger.com/t/100039997514822/' ">Chat</button><br>
+        <button class="longlist" onclick="location.href = 'https://www.youtube.com/watch?v=bRXi5KnveXE&list=RDbRXi5KnveXE&start_radio=1'"><i class="fa-solid fa-music"></i> Music</button>
+    </center>
+   
+
+    <script language="JavaScript">
+        window.onload = function() {
+            document.addEventListener("contextmenu", function(e) {
+                e.preventDefault();
+            }, false);
+            document.addEventListener("keydown", function(e) {
+                //document.onkeydown = function(e) {
+                // "I" key
+                if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+                    disabledEvent(e);
+                }
+                // "J" key
+                if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+                    disabledEvent(e);
+                }
+                // "S" key + macOS
+                if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {
+                    disabledEvent(e);
+                }
+                // "U" key
+                if (e.ctrlKey && e.keyCode == 85) {
+                    disabledEvent(e);
+                }
+                // "F12" key
+                if (event.keyCode == 123) {
+                    disabledEvent(e);
+                }
+            }, false);
+        
+            function disabledEvent(e) {
+                if (e.stopPropagation) {
+                    e.stopPropagation();
+                } else if (window.event) {
+                    window.event.cancelBubble = true;
+                }
+                e.preventDefault();
+                return false;
+            }
+        };
+    </script>
+</body>
